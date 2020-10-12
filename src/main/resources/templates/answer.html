@@ -21,7 +21,13 @@
         答え：<span th:text="${quiz.answer} ? '〇' : '×'"></span>
     </p>
     <p th:text="${result}"></p>
-    <a th:href="@{/page/quiz}">もう1度遊ぶ</a>
+    <div>
+        <a th:href="@{/page/quiz}">もう1度遊ぶよ</a>
+    </div>
+    <div>
+        <a th:href="@{/page/show}">一覧へ</a>
+    </div>
+
 </div>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

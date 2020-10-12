@@ -33,13 +33,16 @@
         <span th:text="${errorMessage}"></span>
     </div>
     <div class="row">
-        <div class="col-md-auto">
+        <div class="col-2">
             <a th:href="@{/page/load}" class="btn btn-light">ファイルを読み込む</a>
         </div>
-        <div class="col">
+        <div class="col-2">
             <form th:action="@{/page/save}" method="POST">
                 <button type="submit" class="btn btn-primary">ファイルに保存する</button>
             </form>
+        </div>
+        <div class="col-2">
+            <a th:href="@{/page/quiz}" class="btn btn-success">クイズへ挑戦!</a>
         </div>
     </div>
     <form th:action="@{/page/create}" method="POST" class="create-form">
